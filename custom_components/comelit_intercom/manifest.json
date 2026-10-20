@@ -1,0 +1,16 @@
+{
+  "domain": "comelit_intercom",
+  "name": "Comelit Intercom",
+  "codeowners": [
+    "@jorgefspereira"
+  ],
+  "config_flow": true,
+  "documentation": "https://github.com/jorgefspereira/comelit_intercom",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "aiortc @ https://github.com/aiortc/aiortc/archive/34b5fd3409220e1aeb8b62f2c56a9ae2085ca8c8.zip"
+  ],
+  "version": "0.1.2",
+  "issue_tracker": "https://github.com/jorgefspereira/comelit_intercom/issues"
+}

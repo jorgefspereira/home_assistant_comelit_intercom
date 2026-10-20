@@ -1,0 +1,11 @@
+homeassistant==2026.10.2
+# Fixed upstream snapshot supporting HA's PyAV 19 constraint. The PyPI 1.15.0
+# release still requires av<18; do not replace this URL with aiortc==1.15.0.
+aiortc @ https://github.com/aiortc/aiortc/archive/34b5fd3409220e1aeb8b62f2c56a9ae2085ca8c8.zip
+av==19.0.0
+pytest>=8.3
+pytest-asyncio>=1.0
+ruff>=0.12
+numpy>=2.0
+PyTurboJPEG==1.8.3
+ha-ffmpeg>=3.2

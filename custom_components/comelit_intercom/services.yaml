@@ -1,0 +1,25 @@
+record:
+  name: Record video
+  description: Record a silent MP4 from the door camera. The timer starts after video arrives. Existing output is replaced only after successful validation.
+  target:
+    entity:
+      integration: comelit_intercom
+      domain: camera
+  fields:
+    filename:
+      name: Filename
+      description: Absolute .mp4 path in an existing directory listed in allowlist_external_dirs.
+      required: true
+      example: /media/comelit/entrada.mp4
+      selector:
+        text:
+    duration:
+      name: Duration
+      description: Seconds to record after receiving the first video frame.
+      default: 20
+      selector:
+        number:
+          min: 1
+          max: 300
+          unit_of_measurement: s
+          mode: box

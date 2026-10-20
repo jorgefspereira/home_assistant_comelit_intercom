@@ -1,0 +1,49 @@
+{
+  "title": "Comelit Intercom",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect your Comelit account",
+        "description": "Sign in with the account used in the Comelit app. Setup discovers devices without activating doors or starting video.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Comelit",
+        "description": "Enter the current password for {email}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Comelit rejected the credentials or authorization response.",
+      "cannot_connect": "Unable to communicate with Comelit. Try again later.",
+      "no_devices": "No compatible WebRTC cameras or door/relay controls were found."
+    },
+    "abort": {
+      "already_configured": "This account is already configured.",
+      "reauth_successful": "Comelit credentials updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Video settings",
+        "description": "HD is a request to the monitor. Some devices still deliver 320×240.",
+        "data": {
+          "resolution": "Requested resolution"
+        }
+      }
+    }
+  },
+  "entity": {
+    "button": {
+      "activate": {
+        "name": "Activate"
+      }
+    }
+  }
+}

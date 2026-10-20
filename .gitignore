@@ -1,0 +1,26 @@
+# Credentials and captured private data
+comelit.env
+.env
+.env.*
+!.env.example
+*.pcap
+*.pcapng
+*.mp4
+*.log
+.comelit-*
+
+# Local environments and generated files
+.venv/
+venv/
+rtcvenv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+*.zip
+.DS_Store
